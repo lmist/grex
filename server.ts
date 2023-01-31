@@ -23,6 +23,7 @@ const schema = makeExecutableSchema ({resolvers, typeDefs});
 const server = new Server({
   handler: async (req) => {
     const { pathname } = new URL(req.url)
+
     return pathname === "/graphql"
     ? await GraphQLHTTP<Request>({
       schema,
