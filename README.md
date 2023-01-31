@@ -8,6 +8,19 @@
 <tr><td>
 
 ```gql
+query {
+  allTracks {
+    name
+      artist
+      album
+    year
+  }
+}
+```
+
+</td><td>
+
+```gql
 mutation {
   addTrack(
     name: "Clair De Lune",
@@ -22,12 +35,6 @@ mutation {
   }
 }
 ```
-
-</td><td>
-
-```gql
-```
-
 </td></tr>
 <tr><td>
 
@@ -38,6 +45,9 @@ mutation {
 - [ ] move to an ORM instead of raw SQL
 - [ ] error handling (db connection)
 - [ ] monadic null checks
+- [ ] some logging would be nice
+
+- [ ] CA Certificate for TLS connection to DB
 
 - [ ] github actions
 - [ ] check with CSRF on exposing the graphiql environment
