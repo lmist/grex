@@ -1,3 +1,3 @@
 default:
-	deno run --allow-net hellodub.ts
+	deno run --allow-net --allow-env --allow-read server.ts
 

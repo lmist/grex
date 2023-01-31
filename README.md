@@ -2,8 +2,8 @@
 
 ## todos
 
-- [ ] refactor into separate files
-- [ ] attach postgres db
+- [X] refactor into separate files
+- [X] attach postgres db
 - [ ] move to an ORM instead of raw SQL
 - [ ] add deno project settings incl. fmt and lint
 - [ ] github actions
