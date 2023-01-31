@@ -1,0 +1,6 @@
+#import Track from "track.gql"
+
+type Query {
+  allTracks: [Track]
+  oneTrack(name: String): Track
+}

@@ -1,4 +1,15 @@
-import { gql } from "https://deno.land/x/graphql_tag@0.0.1/mod.ts";
+// import { gql } from "https://deno.land/x/graphql_tag@0.0.1/mod.ts";
+
+import { importQL } from "https://deno.land/x/importql/mod.ts";
+
+const query = importQL("query.gql");;
+const mutation = importQL("mutation.gql");
+
+export const typeDefs = {
+  query,
+  mutation
+};
+
 
 // explained it in two ways here, can we use the best of both?
 
@@ -28,22 +39,8 @@ import { gql } from "https://deno.land/x/graphql_tag@0.0.1/mod.ts";
  * String name, artist, album and Int (integer) year
  */
 
-export const typeDefs = gql`
-  type Track {
-    name: String
-    artist: String
-    album: String
-    year: Int
-  }
+// export const typeDefs = gql`
 
-  type Query {
-    allTracks: [Track]
-    oneTrack (name: String): Track
-  }
 
-  type Mutation {
-    addTrack(name: String, artist: String, album: String, year: Int): Track
-  }
-`;
 
 

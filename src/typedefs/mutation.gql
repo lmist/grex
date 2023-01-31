@@ -1,0 +1,5 @@
+#import Track from "track.gql"
+
+type Mutation {
+  addTrack(name: String, artist: String, album: String, year: Int): Track
+}

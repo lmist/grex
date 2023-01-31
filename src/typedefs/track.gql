@@ -1,0 +1,6 @@
+type Track {
+  name: String
+  artist: String
+  album: String
+  year: Int
+}

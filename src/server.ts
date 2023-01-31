@@ -4,7 +4,7 @@ import { makeExecutableSchema } from "https://deno.land/x/graphql_tools@0.0.2/mo
 import { gql } from "https://deno.land/x/graphql_tag@0.0.1/mod.ts";
 
 import { resolvers } from "./resolvers.ts";
-import { typeDefs } from "./typedefs.ts";
+import { typeDefs } from "./typedefs/typedefs.ts";
 
 /*
  * The server wrapper will take:
