@@ -36,7 +36,8 @@ mutation {
 }
 ```
 </td></tr>
-<tr><td>
+<!-- <tr><td> -->
+</tbody></table>
 
 ## todos
 
