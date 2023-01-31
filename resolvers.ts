@@ -69,9 +69,11 @@ const addTrack = async (args: any) => {
   const result = await databaseClient.queryObject`
     INSERT INTO track
     (name, artist, album, year)
-    VALUES (${name} ${artist} ${album} ${year})
+    VALUES (${name}, ${artist}, ${album}, ${year})
     RETURNING name, artist, album, year
   `;
+
+  return result.rows[0]
 };
 
 /* Why doesn't default work? */
