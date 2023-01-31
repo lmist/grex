@@ -11,8 +11,8 @@
 query {
   allTracks {
     name
-      artist
-      album
+    artist
+    album
     year
   }
 }
